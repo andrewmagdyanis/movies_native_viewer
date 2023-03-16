@@ -1,24 +1,75 @@
 name: movies_native_viewer
 description: A new Flutter project.
 publish_to: 'none'
-
 version: 1.0.0+1
-
 environment:
   sdk: '>=2.19.4 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-
+  bloc: ^8.1.0
+  flutter_bloc: ^8.1.1
+  shared_preferences: ^2.0.13
+  sqflite: ^2.0.2
+  permission_handler: ^10.2.0
+  connectivity: ^3.0.4
+  share: ^2.0.1
+  url_launcher: ^6.0.4
+  cached_network_image: ^3.2.0
+  form_field_validator: ^1.1.0
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^1.0.0
+  flutter_launcher_icons: ^0.11.0
+  flutter_native_splash:
 
-  flutter_lints: ^2.0.0
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/Watcher_splash_1024.png
+  color_dark: "#ffce06"
+  image_dark: assets/images/Watcher_splash_1024.png
+  android_gravity: center
+  ios_content_mode: center
+  web_image_mode: center
+  android: true
+  ios: true
+  web: true
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/Watcher_LOGO.png"
+  adaptive_icon_background: "#fff5dd7c"
+  adaptive_icon_foreground: "assets/icons/Watcher_LOGO.png"
+  web:
+    generate: true
+    image_path: "assets/icons/Watcher_LOGO.png"
+    background_color: "#hexcode"
+    theme_color: "#fff5dd7c"
+  windows:
+    generate: true
+    image_path: "assets/icons/Watcher_LOGO.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/Watcher_LOGO.png"
 flutter:
-
   uses-material-design: true
+  assets:
+  - assets/images/
+  - assets/icons/
+  fonts:
+    - family: MyFlutterApp
+      fonts:
+        - asset: assets/fonts/MyFlutterApp.ttf
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Bold.ttf
+        - asset: assets/fonts/Raleway-Regular.ttf
+
+flutter_intl:
+  enabled: true
