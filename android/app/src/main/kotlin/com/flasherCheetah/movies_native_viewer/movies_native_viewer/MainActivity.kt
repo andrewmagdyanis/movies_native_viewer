@@ -76,7 +76,6 @@ class MainActivity : FlutterActivity() {
                 }
                 it.close()
                 finalResponse = response.toString()
-                println("Response : $response")
             }
         }
         return finalResponse
